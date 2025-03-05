@@ -88,7 +88,7 @@ const SignUp = () => {
                 name={field}
                 value={formData[field]}
                 onChange={handleChange}
-                autoComplete={field === "password" ? "new-password" : field === "number" ? "tel" : "off"}
+                autoComplete={field === "password" ? "new-password" : field === "number" ? "tel" : field === "name" ? "name" : "off"}
                 className="w-full p-3 border-2 border-orange-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 transition-all duration-300 transform hover:scale-105 focus:scale-105"
               />
             </motion.div>
